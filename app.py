@@ -4,7 +4,7 @@ from keras.models import load_model
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.set_page_config(page_title="Attendance System using Facial Recognition Batch-30",page_icon="memo",layout="wide")
+st.set_page_config(page_title="Attendance sys Facial Recognition Batch-30",page_icon="memo",layout="wide")
 
 img1 = Image.open('head.png')
 
