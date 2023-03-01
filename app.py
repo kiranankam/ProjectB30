@@ -20,10 +20,11 @@ def r2_score(y_true,y_pred):
     v = sum(square(y_true-mean(y_true)))
     return (1-u/(v+epsilon()))
 
-model = load_model('network.h5')
+
 
 
 img_file_buffer = st.camera_input("Take a picture")
+model = load_model('network.h5',custom_objects={"accuracy": accuracy})
 
 if img_file_buffer is not None:
     # To read image file buffer as a PIL Image:
