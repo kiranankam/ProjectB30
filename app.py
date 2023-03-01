@@ -4,7 +4,7 @@ from keras.models import load_model
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.set_page_config(page_title="Attendance System using Facial Recognition",page_icon="memo",layout="wide")
+st.set_page_config(page_title="Attendance System using Facial Recognition Batch-30",page_icon="memo",layout="wide")
 
 img1 = Image.open('head.png')
 
@@ -24,7 +24,7 @@ def r2_score(y_true,y_pred):
 
 
 img_file_buffer = st.camera_input("Take a picture")
-model = load_model('network.h5',custom_objects=None)
+#model = load_model('network.h5',custom_objects=None)
 
 if img_file_buffer is not None:
     # To read image file buffer as a PIL Image:
