@@ -44,7 +44,7 @@ if img_file_buffer is not None:
 if img:
 	img = Image.open(img)
 	st.image(img,caption="Student Image")
-	img_grey = img.convert("[L")
+	img_grey = img.convert("L")
 	img_grey = img_grey.resize((28,32))
 	imgs = np.array(img_grey)
 	data = np.reshape(imgs,(1,28,32,1))
