@@ -8,7 +8,7 @@ st.set_page_config(page_title="Attendance sys Facial Recognition Batch-30",page_
 
 img1 = Image.open('head.png')
 
-st.header("Attendance System using Facial Recognition")
+st.header("Attendance System using Facial Recognition Batch 30")
 
 
 st.sidebar.image(img1)
