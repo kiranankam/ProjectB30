@@ -51,6 +51,6 @@ if img:
 	predic = model.predict(data)
 
 	if st.sidebar.button("Student image"):
-    		st.subheader("Image : {}".format(predict[0][0]))
+    		st.subheader("Image : {}".format(predic[0][0]))
 
 
